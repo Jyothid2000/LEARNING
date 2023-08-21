@@ -1,0 +1,24 @@
+If we want to access only one behaviour of an object only once,
+then we will create Ananamous object.
+Example:
+
+public class Car {
+   String brand;
+   String color;
+   int cost;
+   
+   void allowToDrive()
+   {
+      System.out.println("Car is moving.....");
+   }
+}
+
+public class CarApp {
+   public static void main(String[] args) {
+       new Car().allowToDrive();
+       new Car().allowToDrive();
+   }
+}
+
+Output: Car is moving.....
+        Car is moving.....
